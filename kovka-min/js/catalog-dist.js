@@ -1,0 +1,1 @@
+$(document).on("ready",function(){function a(a){var t=$(".works-list li").hide(500).addClass("zoomOut animated");$.each(t,function(){1==$(this).data(a)&&$(this).removeClass().fadeIn().addClass("zoomIn animated")})}$(".works-nav a").click(function(t){t.preventDefault();var s=$(this).data("target");$(this).parents().addClass("active").siblings("li").removeClass("active"),a(s)})});
