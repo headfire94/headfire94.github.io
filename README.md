@@ -1,2 +1,2 @@
-# headfire94.github.io
-my personal website
+# headfire.github.io
+My personal website
