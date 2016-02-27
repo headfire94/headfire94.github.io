@@ -1,8 +1,10 @@
-
+$(window).on('load', function () {
+  $('#page-preloader').hide();
+  $('.wrapper').show();
+  });
 
 $(document).ready(function () {
- $('#page-preloader').hide();
-  $('.wrapper').show();
+ 
  
   $('#fullpage').fullpage({
     //Navigation
