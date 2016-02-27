@@ -85,27 +85,6 @@ a {
   box-sizing: border-box;
   z-index: 0;
 }
-/*#page-preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: #edb336;
-  z-index: 9999;
-  & .preloader-inner {
-    position: absolute;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-   
-     background:  url(../img/preloader.gif)  no-repeat center center; 
-      background-size: cover; 
-     top: 50%;
-    margin-top: -50px;
-     margin-left: -50px;
-  }
-}*/
 /* FULL PAGE SCROLL PLAGIN STYLE START*/
 #fullpage {
   position: absolute;
