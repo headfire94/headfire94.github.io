@@ -9,7 +9,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+  <style type="text/css">
+    .page-preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: #edb336;
+      z-index: 9999;
+    }
+    
+    .preloader-inner {
+      position: absolute;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background: url(../img/preloader.gif) no-repeat center center;
+      background-size: cover;
+      top: 50%;
+      margin-top: -50px;
+      margin-left: -50px;
+    }
+  </style>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 

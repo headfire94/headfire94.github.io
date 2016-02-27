@@ -1,6 +1,4 @@
-$(window).load(function () {
-   
-});
+
 
 $(document).ready(function () {
  $('#page-preloader').hide();

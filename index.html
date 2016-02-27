@@ -9,7 +9,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+  <style type="text/css">
+    .page-preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: #edb336;
+      z-index: 9999;
+    }
+    
+    .preloader-inner {
+      position: absolute;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      background: url(../img/preloader.gif) no-repeat center center;
+      background-size: cover;
+      top: 50%;
+      margin-top: -50px;
+      margin-left: -50px;
+    }
+  </style>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
 
@@ -23,15 +45,15 @@
 
 
 
- <div class="pages-transition" id="pages-transition">
-             <div class="transition"></div>
-           </div>
-<div class="page-preloader" id="page-preloader">
-     <span class="preloader-inner"></span>
-      </div>
+  <div class="pages-transition" id="pages-transition">
+    <div class="transition"></div>
+  </div>
+  <div class="page-preloader" id="page-preloader">
+    <span class="preloader-inner"></span>
+  </div>
   <div class="wrapper">
     <div class="wrapper-inner">
-      
+
       <header id="header" class="header">
         <div class="header-inner">
           <a href="/" class="logo"></a>
@@ -45,7 +67,7 @@
           </nav>
         </div>
       </header>
-        <div id="menu">
+      <div id="menu">
         <div class="menu-inner">
           <div class="menu-nav">
             <ul>
@@ -85,18 +107,18 @@
             </ul>
           </div>
         </div>
-      </div>  
+      </div>
       <div class="container">
-      
-      
+
+
         <div id="fullpage">
-          
-        
+
+
           <section class="section">
-            
+
             <div class="section-inner">
               <div class="eyes">
-               
+
                 <figure>
                   <img class="glasses" src="../img/glasses2.png" alt="">
                   <div class="eyes-animation">
@@ -111,9 +133,9 @@
               </div>
             </div>
           </section>
-        
+
           <section class="section about">
-        
+
             <div class="section-inner">
               <div class="info-holder">
                 <span>About me</span>
@@ -121,10 +143,10 @@
                 <p>The work I provide is of highest quality and tested in a wide range of devices. I take care that each project is clean and easily maintainable so you can enhance a website as your company grows.</p>
               </div>
             </div>
-        
+
           </section>
-        
-        
+
+
           <section class="skills section">
             <div class="section-inner">
               <div class="info-holder">
@@ -142,27 +164,27 @@
                     <li>Jquery</li>
                     <li>Twitter Bootstrap</li>
                   </ul>
-        
+
                   <ul>
                     <li>Design tools</li>
                     <li>Adobe Photoshop</li>
                     <li>Adobe Illustrator</li>
                     <li>Adobe Premiere Pro</li>
                   </ul>
-        
+
                   <ul>
                     <li>Patterns and Techniques</li>
                     <li>Seo On-page Optimisation</li>
                     <li>Object Oriented Programming</li>
                     <li>Ajax</li>
-        
+
                   </ul>
                 </div>
               </div>
             </div>
           </section>
-        
-        
+
+
           <section class="contacts section">
             <div class="section-inner">
               <div class="info-holder">
@@ -208,34 +230,42 @@
               </div>
             </div>
           </section>
-        
+
         </div>
-     
-    
-    <div class="portfolio" id="portfolio">
-                   <div class="portfolio-inner">
-              <h5>Recent works</h5>
-              <div class="preview-wrapper">
-                <a href="/kovka-min/" class="website-link"><div class="preview-image"></div></a>
-                
-              </div>
-              <div class="preview-wrapper">
-                <a href="http://gruzchikitomsk.ru/" class="website-link"><div class="preview-image"></div></a>
-                
-              </div>
-              <div class="preview-wrapper">
-                <a href="http://alfa-kard.ru/" class="website-link"><div class="preview-image"></div></a>
-                
-              </div>
+
+
+        <div class="portfolio" id="portfolio">
+          <div class="portfolio-inner">
+            <h5>Recent works</h5>
             <div class="preview-wrapper">
-                <a href="http://medicalbooks-up.ru/" class="website-link"><div class="preview-image"></div></a>
-                
-              </div>
-              
-           </div>
-           
-           </div>
-         
+              <a href="/kovka-min/" class="website-link">
+                <div class="preview-image"></div>
+              </a>
+
+            </div>
+            <div class="preview-wrapper">
+              <a href="http://gruzchikitomsk.ru/" class="website-link">
+                <div class="preview-image"></div>
+              </a>
+
+            </div>
+            <div class="preview-wrapper">
+              <a href="http://alfa-kard.ru/" class="website-link">
+                <div class="preview-image"></div>
+              </a>
+
+            </div>
+            <div class="preview-wrapper">
+              <a href="http://medicalbooks-up.ru/" class="website-link">
+                <div class="preview-image"></div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </div>
 
