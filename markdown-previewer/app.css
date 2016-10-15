@@ -7651,7 +7651,7 @@ button.close {
 }
 
 body {
-  background: url(/assets/mountains.jpg);
+  background: url(./assets/mountains.jpg);
   background-size: 100%;
 }
 
