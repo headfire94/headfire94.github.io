@@ -3,7 +3,7 @@ import fullpage from './fullpage';
 class MainPage {
     constructor() {
         this.fullPageContainer = $('#fullpage');
-        this.menuItem = $('#menu li');
+        this.menuItem = $('#menu').find('li');
         this.init();
     }
 
@@ -15,7 +15,7 @@ class MainPage {
     handleNavClick() {
         this.menuItem.on('click', (e)=> {
             e.preventDefault();
-            var anchor = $(e.target).attr('data-menuanchor');
+            var anchor = $(e.target).closest('li').attr('data-menuanchor');
             $.fn.fullpage.moveTo(anchor);
         });
     }
