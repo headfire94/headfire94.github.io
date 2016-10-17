@@ -10,6 +10,19 @@ class MainPage {
     init() {
         this.initFullPagePlugin();
         this.handleNavClick();
+        this.handleTopNavClick();
+        this.hidePreloader()
+    }
+
+    hidePreloader() {
+        $('#preloader').hide();
+    }
+
+    handleTopNavClick() {
+        $('#main-link, #logo').on('click', function (e) {
+            e.preventDefault();
+            $.fn.fullpage.moveTo('home');
+        })
     }
 
     handleNavClick() {

@@ -2,197 +2,183 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>HeadFire94 - FrontEnd Developer</title>
-  <meta name="description" content="Egor Vodopyanov personal webpage">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HeadFire94 - FrontEnd Developer</title>
+    <meta name="description" content="Egor Vodopyanov personal webpage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.css">
 
 </head>
 
 <body>
-
-
-
-  <div class="pages-transition" id="pages-transition">
-    <div class="transition"></div>
-  </div>
-  <div class="page-preloader" id="page-preloader">
-    <span class="preloader-inner"></span>
-  </div>
-  <div class="wrapper">
+<div id="preloader" class="preloader">
+    <div class='preloader__box'>
+        <div class="preloader__icon"></div>
+    </div>
+</div>
+<div class="wrapper">
     <div class="wrapper-inner">
 
-      <header id="header" class="header">
-        <div class="header-inner">
-          <a href="/" class="logo"></a>
-          <nav class="header-nav">
-            <ul>
-              <li><a href="#" class="nav-item active" id="main-link" data-url="/">Main</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div id="menu">
-        <div class="menu-inner">
-          <div class="menu-nav">
-            <ul>
-              <li data-menuanchor="home" class="active">
-                <a href="/">
-                  <span class="black-bar"></span>
-                  <h4 class="svg-home">
-               <svg>
-                        <use xlink:href="/assets/img/svgdefs.svg#home"></use>
-                      </svg>
-             </h4>
-                  <h4>Home</h4>
+        <header id="header" class="header">
+            <div class="header-inner">
+                <a href="/" class="logo" id="logo"></a>
+                <nav class="header-nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav-item active" id="main-link" data-url="/">Main</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="ghab header-link" href="https://github.com/headfire94" target="_blank">
                 </a>
-              </li>
-
-              <li data-menuanchor="about">
-                <a href="/">
-                  <span class="black-bar"></span>
-                  <h4>01</h4>
-                  <h4>About Me</h4></a>
-              </li>
-
-              <li data-menuanchor="skills">
-                <a href="/">
-                  <span class="black-bar"></span>
-                  <h4>02</h4>
-                  <h4>Skills</h4></a>
-              </li>
-
-              <li data-menuanchor="contacts">
-                <a href="/">
-                  <span class="black-bar"></span>
-                  <h4>03</h4>
-                  <h4>Contacts</h4></a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-
-
-        <div id="fullpage">
-
-
-          <section class="section">
-
-            <div class="section-inner">
-              <div class="eyes">
-
-                <figure>
-                  <img class="glasses" src="/assets/img/glasses2.png" alt="">
-                  <div class="eyes-animation">
-                    <img src="/assets/img/face2.gif" alt="">
-                  </div>
-                </figure>
-              </div>
-              <div class="greeting">
-                <h1>Hello</h1>
-                <h3>I'm Egor Vodopyanov</h3>
-                <h2>Front-end developer</h2>
-              </div>
             </div>
-          </section>
+        </header>
+        <div id="menu">
+            <div class="menu-inner">
+                <div class="menu-nav">
+                    <ul>
+                        <li data-menuanchor="home" class="active">
+                            <a href="/">
+                                <span class="black-bar"></span>
+                                <h4 class="svg-home">
+                                </h4>
+                                <h4>Home</h4>
+                            </a>
+                        </li>
 
-          <section class="section about">
+                        <li data-menuanchor="about">
+                            <a href="/">
+                                <span class="black-bar"></span>
+                                <h4>01</h4>
+                                <h4>About Me</h4></a>
+                        </li>
 
-            <div class="section-inner">
-              <div class="info-holder">
-                <span>About me</span>
-                <h4> I develop modern,<br> highly interactive,<br> responsive websites </h4>
-                <p>The work I provide is of highest quality and tested in a wide range of devices. I take care that each project is clean and easily maintainable so you can enhance a website as your company grows.</p>
-              </div>
-            </div>
+                        <li data-menuanchor="skills">
+                            <a href="/">
+                                <span class="black-bar"></span>
+                                <h4>02</h4>
+                                <h4>Skills</h4></a>
+                        </li>
 
-          </section>
+                        <li data-menuanchor="contacts">
+                            <a href="/">
+                                <span class="black-bar"></span>
+                                <h4>03</h4>
+                                <h4>Contacts</h4></a>
+                        </li>
 
-
-          <section class="skills section">
-            <div class="section-inner">
-              <div class="info-holder">
-                <span>Skills</span>
-                <h4>List of skills and techniques<br> I use in my work</h4>
-                <div class="list-of-skills cf">
-                  <ul>
-                    <li>Skills</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                  </ul>
-                  <ul>
-                    <li>Libraries and Frameworks</li>
-                    <li>React Js</li>
-                    <li>Redux</li>
-                    <li>Jquery</li>
-                    <li>Twitter Bootstrap</li>
-                  </ul>
-
-                  <ul>
-                    <li>Patterns and Techniques</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Ajax</li>
-                    <li>BEM</li>
-                  </ul>
-
-
-                  <ul>
-                    <li>Tools</li>
-                    <li>Webpack</li>
-                    <li>Gulp</li>
-                  </ul>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </section>
+        </div>
+        <div class="container">
 
+            <div id="fullpage">
 
-          <section class="contacts section">
-            <div class="section-inner">
-              <div class="info-holder">
-                <span>Contacts</span>
-                <h4>Have a cool project in mind,<br> and think I can help you with it?
-           </h4>
-                <p>Feel free to contact me:</p>
-                <p class="email">
-                  <a href="mailto:headfire94work@gmail.com">headfire94work@gmail.com</a>
-                </p>
-                <div class="socials">
-                  <ul>
+                <section class="section">
 
-                    <li>
-                      <a href="https://ru.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BF%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2-0b6477113" class="ldin" target="_blank">
-                        <svg>
-                          <use xlink:href="/assets/img/svgdefs.svg#ldin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="skype:egorvodopyanov" class="skype">
-                        <svg>
-                          <use xlink:href="/assets/img/svgdefs.svg#skype"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                    <div class="section-inner">
+                        <div class="eyes">
+
+                            <figure>
+                                <img class="glasses" src="/assets/img/glasses2.png" alt="">
+                                <div class="eyes-animation">
+                                    <img src="/assets/img/eyes-opt.gif" alt="">
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="greeting">
+                            <h1>Hello</h1>
+                            <h3>I'm Egor Vodopyanov</h3>
+                            <h2>Front-end developer</h2>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section about">
+
+                    <div class="section-inner">
+                        <div class="info-holder">
+                            <span>About me</span>
+                            <h4> I develop modern,<br> highly interactive,<br> responsive websites </h4>
+                            <p>The work I provide is of highest quality and tested in a wide range of devices. I take care that each project is clean and easily maintainable so you can enhance a website as your company grows.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="skills section">
+                    <div class="section-inner">
+                        <div class="info-holder">
+                            <span>Skills</span>
+                            <h4>List of skills and techniques<br> I use in my work</h4>
+                            <div class="list-of-skills cf">
+                                <ul>
+                                    <li>Skills</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <ul>
+                                    <li>Libraries and Frameworks</li>
+                                    <li>React Js</li>
+                                    <li>Redux</li>
+                                    <li>Jquery</li>
+                                    <li>Twitter Bootstrap</li>
+                                </ul>
+
+                                <ul>
+                                    <li>Patterns and Techniques</li>
+                                    <li>Object Oriented Programming</li>
+                                    <li>Ajax</li>
+                                    <li>BEM</li>
+                                </ul>
+
+                                <ul>
+                                    <li>Tools</li>
+                                    <li>Webpack</li>
+                                    <li>Gulp</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contacts section">
+                    <div class="section-inner">
+                        <div class="info-holder">
+                            <span>Contacts</span>
+                            <h4>Have a cool project in mind,<br> and think I can help you with it?
+                            </h4>
+                            <p>Feel free to contact me:</p>
+                            <p class="email">
+                                <a href="mailto:headfire94work@gmail.com">headfire94work@gmail.com</a>
+                            </p>
+                            <div class="socials">
+                                <ul>
+
+                                    <li>
+                                        <a href="https://ru.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BF%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2-0b6477113" class="ldin" target="_blank">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/headfire94" class="ghab" target="_blank">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-          </section>
 
         </div>
-
-      </div>
     </div>
 
-  </div>
-  <script src="/assets/main.js"></script>
+</div>
+<script src="/assets/main.js"></script>
 </body>
 
 </html>

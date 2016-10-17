@@ -33,6 +33,8 @@
   },
   "dependencies": {
     "browser-sync": "^2.16.0",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "postcss-inline-svg": "^2.2.0",
+    "postcss-svgo": "^2.1.5"
   }
 }

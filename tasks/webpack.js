@@ -42,7 +42,7 @@ module.exports = function(options) {
                 'window.jQuery': 'jquery'
             },
             watch: DEBUG,
-            devtool: DEBUG ? 'source-map' : null,
+            devtool: null,
             resolve: {
                 modulesDirectories: ['node_modules'],
                 extensions: ['', '.js']
@@ -97,7 +97,9 @@ module.exports = function(options) {
             postcss: function() {
                 return {
                     defaults: [
-                        autoprefixer({browsers: AUTOPREFIXER_BROWSERS})
+                        autoprefixer({browsers: AUTOPREFIXER_BROWSERS}),
+                        require('postcss-inline-svg'),
+                        require('postcss-svgo')
                     ]
                 };
             }

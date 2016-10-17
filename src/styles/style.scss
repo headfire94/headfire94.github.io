@@ -87,6 +87,55 @@ a {
     box-sizing: border-box;
 }
 
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: rgb(237, 179, 54);
+
+    @keyframes uil-ring-anim {
+        0% {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    &__box {
+        background: none;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left: -100px;
+        margin-top: -100px;
+        width: 200px;
+        height: 200px;
+    }
+    &__icon{
+        position: absolute;
+        display: block;
+        width: 160px;
+        height: 160px;
+        top: 20px;
+        left: 20px;
+        border-radius: 80px;
+        box-shadow: 0 6px 0 0 #000000;
+        animation: uil-ring-anim 1s linear infinite;
+    }
+}
+
 /* FULL PAGE SCROLL PLAGIN STYLE END*/
 ul {
     margin: 0;
@@ -176,6 +225,19 @@ ul {
         width: 100%;
         height: 100%;
 
+    }
+}
+
+.header-link {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: 768px) {
+        right: 40px;
+        top: 20px;
     }
 }
 
@@ -311,9 +373,8 @@ ul {
             & .svg-home {
                 box-sizing: border-box;
                 padding: 7px;
-                & svg {
-                    fill: white;
-                }
+                background: #{'svg-load(home.svg, fill: #fff) center  no-repeat'};
+                background-size: 60%;
             }
 
         }
@@ -432,6 +493,16 @@ ul {
     max-width: 500px;
 }
 
+.contacts .ldin {
+    background: #{'svg-load(linkedin.svg)  center  no-repeat'};
+    background-size: cover;
+}
+
+.ghab {
+    background: #{'svg-load(github-logo.svg)  center  no-repeat'};
+    background-size: cover;
+}
+
 .contacts .email a {
     color: white;
     border-bottom: 1px solid rgba(101, 97, 97, 0.81);
@@ -465,100 +536,6 @@ ul {
 }
 
 /* CONTACTS SECTION END */
-
-// PORTFOLIO START
-
-.portfolio {
-    padding-bottom: 20px;
-    padding-top: 76px;
-    min-height: 1000px;
-    background: rgb(76, 214, 188);
-    & .portfolio-inner {
-        text-align: center;
-        padding: 0 10%;
-    }
-}
-
-.preview-wrapper {
-    margin: 0 auto 30px;
-    max-width: 1024px;
-    & .preview-image {
-        width: 100%;
-        padding-bottom: 60%;
-
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        &:hover, &:focus {
-            cursor: pointer;
-            animation-name: animatedBackground;
-            animation-duration: 14s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-        }
-
-    }
-
-    &:nth-of-type(1) .preview-image {
-        background-image: url(/assets/img/1.jpg);
-        &:hover, &:focus {
-            animation-duration: 20s;
-        }
-    }
-
-    &:nth-of-type(2) .preview-image {
-        background-image: url(/assets/img/2.png);
-        &:hover, &:focus {
-            animation-duration: 15s;
-        }
-    }
-
-    &:nth-of-type(3) .preview-image {
-        background-image: url(/assets/img/3.png);
-        &:hover, &:focus {
-            animation-duration: 3s;
-        }
-    }
-    &:nth-of-type(4) .preview-image {
-        background-image: url(/assets/img/4.png);
-        &:hover, &:focus {
-            animation-duration: 16s;
-        }
-    }
-
-}
-
-.pages-transition {
-
-    display: none;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh !important;
-
-    overflow: hidden;
-    z-index: 10;
-
-    & .transition {
-        width: 100%;
-        height: 100%;
-        background: url(/assets/img/horse.gif) no-repeat bottom center fixed;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
-        padding: 0;
-
-    }
-
-}
-
-//PORTFOLIO END
 
 /* RESPONSIVE PART  */
 
